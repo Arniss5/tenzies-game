@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4A6163;
+    font-family: 'Karla', sans-serif;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+    margin-top: 5rem;
+    width: 800px;
+    height: 700px;
+    background-color: #f9faf4;
+    border-radius: 10px;
+    text-align: center;
+    color: #374b4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+    width: 58%;
+    font-weight: 700;
+}
+
+/* die */
+.dice-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px
+}
+
+.die {
+    width: 80px;
+    height: 80px;
+    background-color: #fcd16f;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.die.held {
+    background-color: #f9a66c;
+}
+
+/* Button */
+.roll-btn {
+    width: 170px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f17a7e;
+    border-radius: 7px;
+    color: #f9faf4;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.confetti {
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+.counters-container {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+
+/* Color for selected: #f9a66c */
